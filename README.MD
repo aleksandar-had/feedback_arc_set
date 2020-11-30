@@ -21,10 +21,17 @@ generator 0-1 1-2 1-3 1-4 2-4 3-6 4-3 4-5 6-0
 
 #Examples:
 #Invocation of the supervisor:
+
 $ ./supervisor
+
 [./supervisor] Solution with 2 edges: 1-2 2-0
+
 [./supervisor] Solution with 1 edges: 2-0
+
 Invocation of one generator:
+
 $ ./generator 0-1 1-2 2-0
+
 Invocation of 10 generators in parallel:
+
 $ for i in {1..10}; do (./generator 0-1 1-2 2-0 &); done
